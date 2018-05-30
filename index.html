@@ -1,1 +1,187 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>NJ Transit | Welcome</title>
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Denver, CO public transportation">
+    <link rel="icon" type="image/x-icon" href="https://masdev.etikcloud.com/masticketing/pic/NJTransit_logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/rtd-styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/myride-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css" />
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__logo">
+            <a href="home">
+                <img src="https://masdev.etikcloud.com/masticketing/pic/NJTransit_logo.png" alt="NJTransit" class="logoPicture" style="min-width:1000px">
+            </a>
+
+        </div>
+        
+        <nav class="header__nav" role="navigation" aria-label="main" style="margin-right:50px;height:7em !important">
+            <div class="header__controls">
+
+            </div>
+            <div class="sc-quick-shopping-cart mobile__hide">
+                
+            </div>
+        </nav>
+
+    </div>
+    <div class="container" style="margin:130px">
+        
+        <div class="m--top" style="float:left;">
+            <div class="sc-login-container div_center" style="max-width:600px;margin-left: 0px;margin-top:60px">
+            <div class="sc-padding">
+                <h2 class="h3">Account Login</h2>
+                    <form>                
+                        <label for="email" class="hide">Username</label>
+                       <input type="text" id="email" name="email" class="form__input" placeholder="Username"  required/>
+                    <label for="password" class="hide">Password</label>
+                    <input type="password" id="password" name="password" class="form__input" placeholder="Password" required>
+                    <button class="btn btn--secondary btn--login" onclick="window.location='events.html';">Login</button>   
+                </form>
+                   
+                    <div class="sc-subtext">
+                        <p>Forgot <a class="login-forgot" href="forgotPassword.html">password?</a></p>    
+                    </div>
+                
+            </div>
+        </div>
+        <a class="btn btn--primary btn--outline btn--create-account ng-binding ng-scope" href="registerNew.html">Register New</a>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="float:right;width:60%;margin-top:90px;height:250px">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://masdev.etikcloud.com/images/login_banner.jpg" alt="Los Angeles" style="min-height: 250px">
+            </div>
+      
+            <div class="item">
+              <img src="../assets/img/slider-people.jpg" alt="Chicago" style="min-height: 250px">
+            </div>
+          
+            <div class="item">
+              <img src="../assets/img/slider-sample.jpg" alt="New york" style="min-height: 250px">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+        
+      </div>
+    
+      <div class="footer">
+
+        <div class="footer__secondary " role="contentinfo ">
+            <div class="footer__container ">
+                <div class="footer__sitelinks" style="min-width:400px">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank ">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank ">Terms of use</a>
+                        </li>
+                        <li>Version:  2.0.a build 2018.05.08_141424</li>
+                    </ul>
+                </div>
+                <p class="footer__copywrite " style="margin-left:50px">&#169; 2018 NJ TRANSIT. All Rights Reserved.</p>
+                <div class="footer__safety " style="background:#3d4267">
+                    <span class="hide ">Safety Message</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function ($) {
+        $(".accordion ").find(".accordion-toggle ").click(function () {
+            //Expand or collapse this panel
+            $(this).next().slideToggle("fast ");
+            //Hide the other panels
+            $(".accordion-content ").not($(this).next()).slideUp('fast');
+        });
+        /**
+        * LOAD GOOGLE TRANSLATE
+        * Load the google translate widget
+        * When a user clicks on el#load-translate
+        */
+
+
+
+    });
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'de,es,fr,it,ja,ko,ru,vi,zh-TW',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            gaTrack: true,
+            gaId: 'UA-11199061-1'
+        }, 'google_translate_element');
+    }
+</script>
+
+<script>
+    $(".working-nav ").hide();
+    $(".working-nav-btn ").click(function () {
+        $(".working-nav ").toggle("fast ");
+        $(this).toggleClass("close ");
+    });
+</script>
+
+
+        <script>
+            $('.editlogin').click(function () {
+                $('.editlogin-content').toggle();
+            });
+            $('.edit-address').click(function () {
+                $('.edit-address-content').toggle();
+            });
+            $('.new-address').click(function () {
+                $('.new-address-content').toggle();
+            });
+        </script>
+</body>
+
+</html>
